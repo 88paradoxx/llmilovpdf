@@ -1,0 +1,44 @@
+# iLovPDF
+
+Free Online PDF & Image Editor | Privacy-First & Client-Side Tools
+All processing happens 100% client-side. No files are uploaded to a server.
+
+> [!IMPORTANT]
+> This is a privacy-first web application where all sensitive operations (PDF editing, background removal, etc.) are performed locally in the browser using WebAssembly and Javascript.
+
+## Core Capabilities
+
+- **PDF Editing**: interactive rendering (PDF.js) + text layer overlay (Fabric.js).
+- **Background Removal**: AI-powered subject extraction and compositing.
+- **Conversion**: Image-to-PDF, PDF-to-Word (native extraction), etc.
+- **Bulk Processing**: Efficient handling of multiple documents/images.
+
+## Technical Architecture
+
+- **Stack**: Vite + React + TypeScript + Tailwind CSS.
+- **Framework**: Multi-page Application (MPA) with React-powered tool modules.
+- **Mobile Optimized**: Responsive headers, balanced tool spacing, and zero-shift orientation logic.
+
+## Key Files & Entry Points
+
+- `index.html`: Main landing page with global tool discovery.
+- `pdf-editor.html`: Advanced multi-page PDF editor (`src/components/tools/PdfEditorTool.tsx`).
+- `background-remover.html`: AI-powered background remover (`src/components/tools/BackgroundRemoverTool.tsx`).
+- `pdf-merge.html`: Join multiple PDF documents.
+- `pdf-split.html`: extract pages or split PDFs.
+- `pdf-compress.html`: Reduce PDF file size.
+- `image-editor.html`: Standard image editing features.
+- `image-resize.html`: Dimensions and file size optimization.
+- `text-to-pdf.html`: Convert plain text or markdown to PDF.
+- `llms.tsx`: Machine-readable React context for LLMs.
+
+## Interaction Patterns
+
+- **Viewport**: Custom panning/zooming logic with persistent zoom levels (Fit-to-Width priority).
+- **Text Handling**: Support for both native PDF text editing and custom text layers.
+- **Fluidity**: Real-time wheel/touch input with suppressed CSS transitions for zero-lag interaction.
+
+## Links
+
+- [GitHub Repository](https://github.com/88paradoxx/llmilovpdf.git)
+- [Live Site](https://ilovpdf.in)

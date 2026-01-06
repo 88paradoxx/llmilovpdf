@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Watermark to PDF | Copyright, Stamp & Logo | iLovPDF</title>
+    <meta name="description"
+        content="Protect your PDF files online. Add text, Confidential stamps, or image logos with adjustable transparency. Free, private, and works offline.">
+    <link rel="canonical" href="https://ilovpdf.in/pdf-watermark.html">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Add Watermark to PDF | Copyright, Stamp & Logo | iLovPDF">
+    <meta property="og:description"
+        content="Protect your PDF files online. Add text, Confidential stamps, or image logos with adjustable transparency. Free, private, and works offline.">
+    <meta property="og:url" content="https://ilovpdf.in/pdf-watermark.html">
+    <meta property="og:image" content="https://www.ilovpdf.in/og-home.png">
+    <meta property="og:site_name" content="iLovPDF">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Add Watermark to PDF | Copyright, Stamp & Logo | iLovPDF">
+    <meta name="twitter:description"
+        content="Protect your PDF files online. Add text, Confidential stamps, or image logos with adjustable transparency. Free, private, and works offline.">
+    <meta name="twitter:image" content="https://www.ilovpdf.in/og-home.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MBFSPER0RX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MBFSPER0RX');
+    </script>
+</head>
+
+<body class=" text-slate-200 antialiased selection:bg-purple-500/30">
+
+    <!-- Static Content & Upload Section (Visible on Load) -->
+    <div id="static-upload-section" class="min-h-screen flex flex-col">
+        <!-- Navigation -->
+        <nav class="border-b border-slate-800 /80 backdrop-blur-xl sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+                <a href="/" class="flex items-center gap-2 font-bold text-xl tracking-tight group">
+                    <span
+                        class="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center text-white shadow-lg shadow-purple-500/20 group-hover:scale-105 transition-transform">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                        </svg>
+                    </span>
+                    <span class="text-white">iLov<span class="text-purple-500">PDF</span></span>
+                </a>
+                <div class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-400">
+                    <a href="/" class="hover:text-white transition-colors">All Tools</a>
+                    <a href="/pdf-editor.html" class="hover:text-white transition-colors">Editor</a>
+                    <a href="/pdf-merge.html" class="hover:text-white transition-colors">Merge</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Hero -->
+        <main class="flex-1 flex flex-col items-center justify-center p-6 relative overflow-hidden">
+            <div class="container relative z-10 w-full text-center">
+                <div class="mb-12">
+                    <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-6 text-white uppercase">
+                        PDF Watermark
+                    </h1>
+                    <p class="subtitle text-lg md:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
+                        Protect your intellectual property. Add Copyright, Confidential, or specific Stamp overlays to
+                        your documents.
+                        Our tool runs locally in your browser for maximum security.
+                    </p>
+                </div>
+
+                <!-- Upload Area -->
+                <div class="max-w-xl mx-auto">
+                    <div class="upload-box group relative p-1">
+                        <label
+                            class="relative block w-full border-2 border-white/5 border-dashed hover:border-purple-500/30 rounded-[18px] p-12 cursor-pointer transition-all duration-300">
+                            <input type="file" id="static-pdf-upload" class="hidden" accept=".pdf">
+                            <span class="flex flex-col items-center gap-6">
+                                <span
+                                    class="w-20 h-20 bg-white/5 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 shadow-inner ring-1 ring-white/10">
+                                    <svg class="w-10 h-10 text-purple-400" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                                    </svg>
+                                </span>
+                                <span class="space-y-2 text-center">
+                                    <span
+                                        class="block text-2xl font-bold text-white group-hover:text-purple-300 transition-colors">Choose
+                                        PDF file</span>
+                                    <span class="block text-sm text-slate-400 font-medium text-center">or drag and drop
+                                        here</span>
+                                </span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="trust-row">
+                    <span>🔒 100% Private</span>
+                    <span>⚡ Local Processing</span>
+                    <span>💻 Works offline</span>
+                </div>
+
+                <p class="hint">
+                    Select your PDF to start adding professional watermarks instantly.
+                </p>
+            </div>
+        </main>
+
+        <!-- Content Sections -->
+        <section class="max-w-3xl mx-auto px-6 py-32">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Features -->
+                <div class="space-y-6">
+                    <h2 class="text-2xl font-black text-white tracking-tighter uppercase">Key Features</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 text-slate-400">
+                            <span
+                                class="w-5 h-5 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 shrink-0 text-xs">✓</span>
+                            <span>Add text or image watermark</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-400">
+                            <span
+                                class="w-5 h-5 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 shrink-0 text-xs">✓</span>
+                            <span>Batch watermarking for multiple pages</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-400">
+                            <span
+                                class="w-5 h-5 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 shrink-0 text-xs">✓</span>
+                            <span>Place over or under text layer</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-400">
+                            <span
+                                class="w-5 h-5 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 shrink-0 text-xs">✓</span>
+                            <span>Works directly in browser</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-400">
+                            <span
+                                class="w-5 h-5 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 shrink-0 text-xs">✓</span>
+                            <span>No signup required</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- How it Works -->
+                <div class="space-y-6">
+                    <h2 class="text-2xl font-black text-white tracking-tighter uppercase">How it works</h2>
+                    <ol class="space-y-4">
+                        <li class="flex items-start gap-4 text-slate-400">
+                            <span
+                                class="w-8 h-8 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white font-bold shrink-0">1</span>
+                            <span>Upload your PDF file to the tool above</span>
+                        </li>
+                        <li class="flex items-start gap-4 text-slate-400">
+                            <span
+                                class="w-8 h-8 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white font-bold shrink-0">2</span>
+                            <span>Configure your text or image watermark</span>
+                        </li>
+                        <li class="flex items-start gap-4 text-slate-400">
+                            <span
+                                class="w-8 h-8 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white font-bold shrink-0">3</span>
+                            <span>Apply changes locally in your browser</span>
+                        </li>
+                        <li class="flex items-start gap-4 text-slate-400">
+                            <span
+                                class="w-8 h-8 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white font-bold shrink-0">4</span>
+                            <span>Download your watermarked PDF instantly</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Security Section -->
+        <section class="max-w-3xl mx-auto px-6 py-32 border-t border-white/5 text-center">
+            <h2 class="text-2xl font-black text-white mb-6 uppercase tracking-tighter">Safe & Secure</h2>
+            <p class="text-lg text-slate-400 leading-[1.6] max-w-2xl mx-auto">
+                Files are processed locally using client-side code and never travel through our servers. Your documents
+                remain on your device during the entire process.
+            </p>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="max-w-3xl mx-auto px-6 py-32 border-t border-white/5">
+            <h2 class="text-2xl font-black text-white mb-12 text-center uppercase tracking-tighter">Frequently Asked
+                Questions</h2>
+            <div class="grid gap-6">
+                <div
+                    class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-purple-500/30 transition-colors">
+                    <h3 class="text-xl font-bold text-white mb-3">Can I use my logo as a watermark?</h3>
+                    <p class="text-slate-400 leading-[1.6]">Yes, you can upload any image format using our <a
+                            href="/background-remover.html" class="text-purple-400 hover:text-purple-300">Background
+                            Remover</a> to create a transparent logo for your watermark.</p>
+                </div>
+                <div
+                    class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-purple-500/30 transition-colors">
+                    <h3 class="text-xl font-bold text-white mb-3">Can I customize the watermark transparency?</h3>
+                    <p class="text-slate-400 leading-[1.6]">Absolutely. You can adjust the opacity of both text and
+                        image watermarks to ensure they don't obscure your main content.</p>
+                </div>
+                <div
+                    class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-purple-500/30 transition-colors">
+                    <h3 class="text-xl font-bold text-white mb-3">Do I need to sign up to use this?</h3>
+                    <p class="text-slate-400 leading-[1.6]">No. Our PDF watermark tool is completely free and requires
+                        no registration or software installation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEO Article Section -->
+        <section class="max-w-3xl mx-auto px-6 py-32 border-t border-white/5">
+            <h2 class="text-2xl font-black text-white mb-6 uppercase tracking-tighter">Secure PDF Watermarking</h2>
+            <div class="prose prose-invert prose-lg text-slate-400">
+                <p class="mb-4">
+                    Protect your documents. Assert ownership and prevent unauthorized use by adding custom watermarks to
+                    your PDF files. Choose between text stamps (like 'CONFIDENTIAL' or 'DRAFT') or upload your own logo
+                    image.
+                </p>
+                <p class="mb-4">
+                    Customizable control. Adjust transparency, rotation, and position to ensure your watermark is
+                    visible but not intrusive. Apply watermarks to specific pages or the entire document in seconds.
+                </p>
+                <p>
+                    Confidentiality guaranteed. Watermarking happens entirely on your device. You can stamp legal
+                    contracts, financial reports, or creative manuscripts without ever uploading them to the cloud.
+                </p>
+            </div>
+        </section>
+
+        <!-- Related PDF Tools -->
+        <section class="max-w-3xl mx-auto px-6 py-32 border-t border-white/5">
+            <h2 class="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500 mb-8 text-center">Related PDF
+                Tools</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="/pdf-editor.html"
+                    class="px-6 py-2 rounded-full border border-white/10 bg-white/5 hover:border-purple-500/30 hover:bg-purple-500/5 transition-all text-sm font-bold text-slate-400 hover:text-white">PDF
+                    Editor</a>
+                <a href="/pdf-merge.html"
+                    class="px-6 py-2 rounded-full border border-white/10 bg-white/5 hover:border-purple-500/30 hover:bg-purple-500/5 transition-all text-sm font-bold text-slate-400 hover:text-white">Merge
+                    PDF</a>
+                <a href="/pdf-compress.html"
+                    class="px-6 py-2 rounded-full border border-white/10 bg-white/5 hover:border-purple-500/30 hover:bg-purple-500/5 transition-all text-sm font-bold text-slate-400 hover:text-white">Compress
+                    PDF</a>
+            </div>
+        </section>
+
+        <footer class=" border-t border-white/5 pt-20 pb-10 px-6 relative z-10">
+            <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12">
+                <div class="col-span-2 lg:col-span-2 space-y-6">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-8 h-8 bg-purple-600 rounded-xl flex items-center justify-center text-white font-black text-lg">
+                            i</div>
+                        <span class="text-xl font-black tracking-tighter text-white uppercase">ilovpdf</span>
+                    </div>
+                    <p class="text-sm text-slate-400 font-medium leading-relaxed max-w-sm">
+                        The first 100% client-side, privacy-first document and image studio.
+                        Process your sensitive files securely without ever uploading them to any server.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <a href="#"
+                            class="p-2 bg-white/5 rounded-lg text-slate-500 hover:text-purple-500 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="p-2 bg-white/5 rounded-lg text-slate-500 hover:text-purple-500 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="p-2 bg-white/5 rounded-lg text-slate-500 hover:text-purple-500 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                                </path>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500">PDF Tools</h4>
+                    <ul class="space-y-3">
+                        <li><a href="/pdf-editor.html"
+                                class="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors">PDF
+                                Editor</a></li>
+                        <li><a href="/pdf-to-word.html"
+                                class="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors">PDF to
+                                Word</a></li>
+                        <li><a href="/pdf-split.html"
+                                class="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors">Split
+                                PDF</a></li>
+                        <li><a href="/pdf-merge.html"
+                                class="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors">Merge
+                                PDF</a></li>
+                        <li><a href="/pdf-compress.html"
+                                class="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors">Compress
+                                PDF</a></li>
+                        <li><a href="/pdf-to-excel.html"
+                                class="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors">PDF to
+                                Excel</a></li>
+                        <li><a href="/pdf-to-ppt.html"
+                                class="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors">PDF to
+                                PPT</a></li>
+                        <li><a href="/pdf-watermark.html"
+                                class="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors">PDF
+                                Watermark</a></li>
+                        <li><a href="/text-to-pdf.html"
+                                class="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors">Text
+                                to PDF</a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500">Image Tools</h4>
+                    <ul class="space-y-3">
+                        <li><a href="/image-resize.html"
+                                class="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors">Resize
+                                Image</a></li>
+                        <li><a href="/image-editor.html"
+                                class="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors">Image
+                                Editor</a></li>
+                        <li><a href="/background-remover.html"
+                                class="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors">Remove
+                                BG</a></li>
+                        <li><a href="/image-compress.html"
+                                class="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors">Compress
+                                Image</a></li>
+                        <li><a href="/filters.html"
+                                class="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors">Filters</a>
+                        </li>
+                        <li><a href="/image-convert.html"
+                                class="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors">Convert
+                                Image</a></li>
+                        <li><a href="/social.html"
+                                class="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors">Social
+                                Resizer</a></li>
+                        <li><a href="/image-to-pdf.html"
+                                class="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors">Image
+                                to PDF</a></li>
+                        <li><a href="/watermark.html"
+                                class="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors">Watermark</a>
+                        </li>
+                        <li><a href="/bulk.html"
+                                class="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors">Bulk
+                                Editor</a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="/seo/about.html"
+                                class="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors">About
+                                ilovpdf</a></li>
+                        <li><a href="/seo/privacy.html"
+                                class="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors">Privacy
+                                Policy</a></li>
+                        <li><a href="/seo/terms.html"
+                                class="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors">Terms
+                                of Use</a></li>
+                        <li><a href="/seo/contact.html"
+                                class="text-sm font-bold text-slate-400 hover:text-purple-400 transition-colors">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="max-w-7xl mx-auto mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">
+                    © 2025 ILOVPDF STUDIO • BROWSER-POWERED COMPUTING
+                </p>
+                <div class="flex items-center gap-2">
+                    <div class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+                    <span class="text-[9px] font-black text-slate-400 uppercase tracking-widest">All Systems
+                        Operational</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- React Root -->
+    <div id="root" class="relative z-50"></div>
+    <script type="module" src="/src/pages/pdf-watermark.tsx"></script>
+</body>
+
+</html>

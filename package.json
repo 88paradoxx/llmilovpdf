@@ -1,0 +1,43 @@
+{
+  "name": "ilovpdf",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./public/css/style.css --minify",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@imgly/background-removal": "^1.7.0",
+    "@types/fabric": "^5.3.0",
+    "docx": "^9.5.1",
+    "fabric": "^5.3.0",
+    "jspdf": "^3.0.4",
+    "jszip": "^3.10.1",
+    "lucide-react": "^0.561.0",
+    "onnxruntime-web": "^1.21.0",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^5.4.449",
+    "pptxgenjs": "^4.0.1",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.0.0",
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "terser": "^5.44.1",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0",
+    "vite-plugin-compression": "^0.5.1",
+    "vitest": "^3.0.0"
+  }
+}

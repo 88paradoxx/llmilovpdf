@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>iLovPDF: Free Online PDF & Image Editor</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <meta name="description"
+    content="Use our free, privacy-first tools to edit PDFs, convert PDF to Word, remove backgrounds with AI, and resize images. 100% client-side processing with no server uploads.">
+  <meta name="keywords"
+    content="PDF Editor, PDF to Word, Split PDF, Merge PDF, Background Remover, AI Eraser, Bulk Image Processing, PDF to Excel, Client-side Tools, iLovPDF">
+  <link rel="canonical" href="https://ilovpdf.in/" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Free Online PDF & Image Editor | Privacy-First & Client-Side Tools | iLovPDF">
+  <meta property="og:description"
+    content="Use our free, privacy-first tools to edit PDFs, convert PDF to Word, remove backgrounds with AI, and resize images. 100% client-side processing with no server uploads.">
+  <meta property="og:url" content="https://www.ilovpdf.in/">
+  <meta property="og:image" content="https://www.ilovpdf.in/og-home.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="iLovPDF">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free Online PDF & Image Editor | Privacy-First & Client-Side Tools | iLovPDF">
+  <meta name="twitter:description"
+    content="Use our free, privacy-first tools to edit PDFs, convert PDF to Word, remove backgrounds with AI, and resize images. 100% client-side processing with no server uploads.">
+  <meta name="twitter:image" content="https://www.ilovpdf.in/og-home.png">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "iLovPDF",
+          "url": "https://ilovpdf.in",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://ilovpdf.in/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "Organization",
+          "name": "iLovPDF",
+          "url": "https://ilovpdf.in"
+        },
+        {
+          "@type": "WebApplication",
+          "name": "iLovPDF",
+          "url": "https://ilovpdf.in",
+          "image": "https://www.ilovpdf.in/og-home.png",
+          "applicationCategory": "UtilityApplication",
+          "operatingSystem": "All",
+          "description": "Free online PDF editor, compressor, merger, and PDF tools that work directly in the browser without uploads.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "1250"
+          }
+        }
+      ]
+    }
+    </script>
+
+  <!-- FAQPage Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is iLovPDF free to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "iLovPDF is completely free to use for editing, resizing, compressing, and converting images and PDFs directly in your browser."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are my images and PDFs uploaded to a server?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. All image and PDF processing happens 100% client-side. Your files never leave your device."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I resize images to an exact size in KB?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. You can resize and compress images to precise KB sizes while maintaining visual quality."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What PDF tools are available on iLovPDF?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "iLovPDF supports PDF editing, merge PDF, split PDF, compress PDF, PDF to Word, PDF to PPT, image to PDF, and PDF page management tools."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I convert PDF files without installing software?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. All PDF conversions work directly in your browser with no software installation required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is iLovPDF safe for private or sensitive documents?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Since files are processed locally and never uploaded, iLovPDF is safe for sensitive and confidential documents."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to create an account to use the tools?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No sign-up or account is required. All tools are instantly available."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does iLovPDF work on mobile devices?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. iLovPDF works on mobile, tablet, and desktop browsers."
+          }
+        }
+      ]
+    }
+    </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MBFSPER0RX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-MBFSPER0RX');
+  </script>
+
+
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Fira+Code:wght@400;700&display=swap"
+    rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Fira+Code:wght@400;700&display=swap"
+      rel="stylesheet">
+  </noscript>
+  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="/css/style.css">
+  </noscript>
+
+  <style>
+    :root {
+      --studio-bg: radial-gradient(circle at top left, #2e1065 0%, #0f172a 50%, #000000 100%);
+      --transition-speed: 0.3s;
+
+      --glass-surface: rgba(15, 23, 42, 0.78);
+      --glass-surface-soft: rgba(15, 23, 42, 0.68);
+      --glass-surface-light: rgba(255, 255, 255, 0.06);
+      --glass-border-strong: rgba(148, 163, 184, 0.45);
+      --glass-border-soft: rgba(148, 163, 184, 0.18);
+      --glass-shadow-soft: 0 22px 45px rgba(15, 23, 42, 0.65);
+
+      --accent: #6366f1;
+      --accent-soft: rgba(99, 102, 241, 0.2);
+      --accent-strong: rgba(129, 140, 248, 0.95);
+
+      --neon-box-bg: rgba(15, 23, 42, 0.85);
+      --neon-box-border: rgba(148, 163, 184, 0.25);
+      --tool-tile-bg: rgba(15, 23, 42, 0.72);
+    }
+
+    html.dark {
+      --studio-bg: radial-gradient(circle at top left, #2e1065 0%, #0f172a 50%, #000000 100%);
+      --glass-surface: rgba(15, 23, 42, 0.82);
+      --glass-surface-soft: rgba(15, 23, 42, 0.74);
+      --glass-surface-light: rgba(15, 23, 42, 0.9);
+      --glass-border-strong: rgba(148, 163, 184, 0.5);
+      --glass-border-soft: rgba(148, 163, 184, 0.24);
+      --glass-shadow-soft: 0 28px 60px rgba(15, 23, 42, 0.85);
+
+      --accent: #818cf8;
+      --accent-soft: rgba(129, 140, 248, 0.26);
+      --accent-strong: rgba(129, 140, 248, 1);
+
+      --neon-box-bg: rgba(15, 23, 42, 0.9);
+      --neon-box-border: rgba(148, 163, 184, 0.4);
+      --tool-tile-bg: rgba(15, 23, 42, 0.86);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--studio-bg);
+      -webkit-font-smoothing: antialiased;
+      transition: background-color var(--transition-speed) ease;
+      height: 100dvh;
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      position: fixed;
+    }
+
+    #root {
+      height: 100dvh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    ::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #e2e8f0;
+      border-radius: 10px;
+    }
+
+    .dark ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #cbd5e1;
+    }
+
+    .dark ::-webkit-scrollbar-thumb:hover {
+      background: #334155;
+    }
+
+    .workspace-grid {
+      background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+
+    .dark .workspace-grid {
+      background-image: radial-gradient(#1e293b 1px, transparent 1px);
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* Global glassmorphism surfaces */
+    .glass-surface {
+      background: var(--glass-surface);
+      border: 1px solid var(--glass-border-soft);
+      box-shadow: var(--glass-shadow-soft);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    .glass-surface-soft {
+      background: var(--glass-surface-soft);
+      border: 1px solid var(--glass-border-soft);
+      box-shadow: 0 14px 32px rgba(15, 23, 42, 0.55);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .glass-toolbar {
+      background: linear-gradient(120deg,
+          rgba(15, 23, 42, 0.9),
+          rgba(15, 23, 42, 0.82),
+          rgba(15, 23, 42, 0.9));
+      border-bottom: 1px solid var(--glass-border-soft);
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .glass-sidebar {
+      background: linear-gradient(160deg,
+          rgba(15, 23, 42, 0.94),
+          rgba(15, 23, 42, 0.86));
+      border-left: 1px solid var(--glass-border-soft);
+      box-shadow: -18px 0 40px rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .glass-chip {
+      background: rgba(15, 23, 42, 0.8);
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.45);
+      box-shadow: 0 14px 30px rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    .glass-button-primary {
+      background: radial-gradient(circle at top left, var(--accent-strong), var(--accent));
+      border: 1px solid rgba(192, 132, 252, 0.5);
+      box-shadow: 0 12px 30px rgba(168, 85, 247, 0.55);
+    }
+
+    .glass-button-primary:hover {
+      box-shadow: 0 18px 40px rgba(168, 85, 247, 0.7);
+      transform: translateY(-1px);
+    }
+
+    .glass-button-secondary {
+      background: rgba(15, 23, 42, 0.88);
+      border: 1px solid rgba(148, 163, 184, 0.45);
+      box-shadow: 0 10px 26px rgba(15, 23, 42, 0.65);
+    }
+
+    .glass-button-secondary:hover {
+      background: rgba(15, 23, 42, 0.96);
+      border-color: rgba(148, 163, 184, 0.9);
+    }
+
+    .glass-input {
+      background: #0f172a !important;
+      border: 1px solid rgba(148, 163, 184, 0.5) !important;
+      color: #ffffff !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      -webkit-text-fill-color: #ffffff !important;
+      position: relative !important;
+      z-index: 1 !important;
+    }
+
+    input.glass-input {
+      height: 44px !important;
+      line-height: normal !important;
+      padding: 0 16px !important;
+      display: block !important;
+      font-size: 14px !important;
+      font-family: inherit !important;
+      box-sizing: border-box !important;
+    }
+
+    textarea.glass-input {
+      padding: 12px !important;
+      line-height: 1.5 !important;
+      font-size: 14px !important;
+      font-family: inherit !important;
+      box-sizing: border-box !important;
+    }
+
+    .glass-slider-track {
+      background: linear-gradient(90deg, rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.4));
+    }
+
+    .glass-slider-thumb {
+      box-shadow: 0 0 0 1px rgba(15, 23, 42, 1), 0 0 0 4px var(--accent-soft), 0 12px 24px rgba(15, 23, 42, 0.9);
+    }
+
+    .glass-badge {
+      background: rgba(15, 23, 42, 0.85);
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.8);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    /* Intense Neon Box Styling updated for glass look */
+    .neon-box {
+      position: relative;
+      background: var(--neon-box-bg);
+      backdrop-filter: blur(28px);
+      -webkit-backdrop-filter: blur(28px);
+      border-radius: 48px;
+      z-index: 1;
+      overflow: visible;
+    }
+
+    .neon-box::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 48px;
+      padding: 1.5px;
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+    }
+
+    /* PDF BOX */
+    .neon-pdf::after {
+      background: linear-gradient(180deg,
+          rgba(85, 81, 255, 0.9) 0%,
+          rgba(85, 81, 255, 0.4) 15%,
+          rgba(168, 85, 247, 0.2) 50%,
+          rgba(168, 85, 247, 0.6) 100%);
+    }
+
+    .neon-pdf {
+      box-shadow:
+        0 10px 40px -15px rgba(168, 85, 247, 0.15),
+        0 0 10px -2px rgba(85, 81, 255, 0.1);
+    }
+
+    .dark .neon-pdf {
+      box-shadow:
+        0 0 40px -15px rgba(168, 85, 247, 0.4),
+        0 0 10px -2px rgba(85, 81, 255, 0.3),
+        inset 0 0 20px rgba(168, 85, 247, 0.05);
+    }
+
+    /* IMAGE BOX */
+    .neon-image::after {
+      background: linear-gradient(135deg,
+          rgba(168, 85, 247, 0.9) 0%,
+          rgba(168, 85, 247, 0.3) 30%,
+          rgba(168, 85, 247, 0.3) 70%,
+          rgba(168, 85, 247, 0.9) 100%);
+    }
+
+    .neon-image {
+      box-shadow:
+        0 10px 50px -15px rgba(168, 85, 247, 0.2),
+        0 5px 15px -5px rgba(236, 72, 153, 0.1);
+    }
+
+    .dark .neon-image {
+      box-shadow:
+        0 0 50px -15px rgba(168, 85, 247, 0.5),
+        0 0 15px -5px rgba(236, 72, 153, 0.2),
+        inset 0 0 30px rgba(168, 85, 247, 0.1);
+    }
+
+    /* EMERALD BOX (Green) */
+    .neon-emerald::after {
+      background: linear-gradient(135deg,
+          rgba(16, 185, 129, 0.9) 0%,
+          rgba(52, 211, 153, 0.3) 30%,
+          rgba(52, 211, 153, 0.3) 70%,
+          rgba(16, 185, 129, 0.9) 100%);
+    }
+
+    .neon-emerald {
+      box-shadow:
+        0 10px 50px -15px rgba(16, 185, 129, 0.3),
+        0 5px 15px -5px rgba(5, 150, 105, 0.2);
+    }
+
+    .dark .neon-emerald {
+      box-shadow:
+        0 0 60px -15px rgba(16, 185, 129, 0.6),
+        0 0 20px -5px rgba(5, 150, 105, 0.3),
+        inset 0 0 30px rgba(16, 185, 129, 0.15);
+    }
+
+    .neon-emerald .tool-tile-modern::before {
+      background: linear-gradient(135deg,
+          rgba(52, 211, 153, 0.9),
+          rgba(16, 185, 129, 0.4));
+    }
+
+    .neon-emerald .tool-tile-modern:hover::before {
+      opacity: 1;
+      transform: scale(1.02);
+    }
+
+    .neon-emerald .tool-tile-modern:hover {
+      background: linear-gradient(135deg, rgba(147, 51, 234, 0.4) 0%, rgba(192, 132, 252, 0.2) 100%);
+      border-color: rgba(168, 85, 247, 0.8);
+      box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+      backdrop-filter: blur(12px);
+    }
+
+    /* Green Tile Backgrounds (Glassy) */
+    .neon-emerald .tool-tile-modern {
+      background: linear-gradient(135deg, rgba(6, 78, 59, 0.4) 0%, rgba(16, 185, 129, 0.1) 100%);
+      border-color: rgba(16, 185, 129, 0.25);
+      backdrop-filter: blur(8px);
+    }
+
+    .dark .neon-emerald .tool-tile-modern {
+      background: linear-gradient(135deg, rgba(2, 44, 34, 0.6) 0%, rgba(6, 78, 59, 0.2) 100%);
+    }
+
+    .dark .neon-emerald .tool-tile-modern:hover {
+      background: linear-gradient(135deg, rgba(126, 34, 206, 0.6) 0%, rgba(168, 85, 247, 0.3) 100%);
+      border-color: rgba(192, 132, 252, 0.6);
+      box-shadow: 0 0 30px rgba(168, 85, 247, 0.4);
+    }
+
+    /* Modern Tool Tile */
+    .tool-tile-modern {
+      position: relative;
+      background: var(--tool-tile-bg);
+      border: 1px solid var(--neon-box-border);
+      transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+      overflow: visible;
+      will-change: transform, background, border-color, box-shadow;
+      transform: translateZ(0);
+      /* Hardware acceleration hack */
+    }
+
+    .tool-tile-modern:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(168, 85, 247, 0.3);
+      transform: scale(1.02) translateY(-6px);
+    }
+
+    .dark .tool-tile-modern:hover {
+      background: rgba(255, 255, 255, 0.06);
+      box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.8);
+    }
+
+    /* Gaussian halo glow around tool boxes */
+    .neon-pdf .tool-tile-modern::before,
+    .neon-image .tool-tile-modern::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      pointer-events: none;
+      opacity: 0.45;
+      transform: scale(0.96);
+      filter: blur(18px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+      z-index: -1;
+    }
+
+    .neon-pdf .tool-tile-modern::before {
+      background: linear-gradient(135deg,
+          rgba(129, 140, 248, 0.9),
+          rgba(79, 70, 229, 0.4));
+    }
+
+    .neon-image .tool-tile-modern::before {
+      background: linear-gradient(135deg,
+          rgba(168, 85, 247, 0.9),
+          rgba(236, 72, 153, 0.4));
+    }
+
+    .neon-pdf .tool-tile-modern:hover::before,
+    .neon-image .tool-tile-modern:hover::before {
+      opacity: 1;
+      transform: scale(1.02);
+    }
+
+    .icon-container-glow {
+      box-shadow: 0 8px 24px -6px rgba(0, 0, 0, 0.2);
+    }
+
+    .dark .icon-container-glow {
+      box-shadow: 0 8px 24px -6px rgba(0, 0, 0, 0.5);
+    }
+
+    .tool-tile-modern:hover .icon-container-glow {
+      transform: scale(1.06);
+      box-shadow:
+        0 0 0 1px rgba(129, 140, 248, 0.6),
+        0 0 18px rgba(129, 140, 248, 0.65),
+        0 10px 24px -12px rgba(15, 23, 42, 0.7);
+    }
+
+    /* Section Heading Glows */
+    .pdf-title-glow {
+      text-shadow: 0 0 10px rgba(85, 81, 255, 0.15);
+    }
+
+    .image-title-glow {
+      text-shadow: 0 0 15px rgba(168, 85, 247, 0.2);
+    }
+
+    .emerald-title-glow {
+      text-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
+    }
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "path": "https://esm.sh/path@^0.12.7",
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "url": "https://esm.sh/url@^0.11.4"
+  }
+}
+</script>
+</head>
+
+<body
+  class="selection:bg-purple-100 selection:text-purple-700 dark:selection:bg-purple-900/30 dark:selection:text-purple-300">
+  <div id="root">
+    <main>
+      <h1 style="text-align: center; margin-top: 50px; font-size: 24px; color: #fff;">Free Online PDF & Image Editor
+      </h1>
+      <!-- Contextual Internal Linking for SEO (Static Fallback) -->
+      <div style="text-align: center; margin-top: 40px; font-size: 14px; opacity: 0.6; color: #64748b;">
+        <p>
+          Popular tools:
+          <a href="/pdf-editor.html" style="color: inherit; text-decoration: none; margin: 0 4px;">PDF Editor</a>,
+          <a href="/pdf-to-word.html" style="color: inherit; text-decoration: none; margin: 0 4px;">PDF to Word</a>,
+          <a href="/pdf-compress.html" style="color: inherit; text-decoration: none; margin: 0 4px;">Compress PDF</a>,
+          <a href="/pdf-merge.html" style="color: inherit; text-decoration: none; margin: 0 4px;">Merge PDF</a>,
+          <a href="/pdf-split.html" style="color: inherit; text-decoration: none; margin: 0 4px;">Split PDF</a>,
+          <a href="/pdf-to-excel.html" style="color: inherit; text-decoration: none; margin: 0 4px;">PDF to Excel</a>,
+          <a href="/image-to-pdf.html" style="color: inherit; text-decoration: none; margin: 0 4px;">Image to PDF</a>,
+          <a href="/image-resize.html" style="color: inherit; text-decoration: none; margin: 0 4px;">Resize Image</a>,
+          <a href="/background-remover.html" style="color: inherit; text-decoration: none; margin: 0 4px;">Background
+            Remover</a>,
+          <a href="/image-compress.html" style="color: inherit; text-decoration: none; margin: 0 4px;">Compress
+            Image</a>,
+          <a href="/bulk.html" style="color: inherit; text-decoration: none; margin: 0 4px;">Bulk Image</a>,
+          <a href="/text-to-pdf.html" style="color: inherit; text-decoration: none; margin: 0 4px;">Text to PDF</a>,
+          <a href="/watermark.html" style="color: inherit; text-decoration: none; margin: 0 4px;">Watermark Image</a>,
+          <a href="/text-to-ppt.html" style="color: inherit; text-decoration: none; margin: 0 4px;">Text to PPT</a>,
+          <a href="/drawing.html" style="color: inherit; text-decoration: none; margin: 0 4px;">Draw on Image</a>
+        </p>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="/src/index.tsx"></script>
+</body>
+
+</html>
