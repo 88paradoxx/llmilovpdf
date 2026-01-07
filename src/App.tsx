@@ -12,6 +12,7 @@ import {
   Sparkles,
   Layers
 } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 import { ToolId } from './types';
 import { TOOLS } from './constants';
 import Footer from './components/Footer';
@@ -266,6 +267,7 @@ export default function App() {
           <Footer getToolPath={toolIdToPath} />
         </div>
       </main>
+      <Analytics />
     </div>
   );
 }
