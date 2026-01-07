@@ -1,4 +1,17 @@
 {
+    "redirects": [
+        {
+            "source": "/:path*",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "www.ilovpdf.in"
+                }
+            ],
+            "destination": "https://ilovpdf.in/:path*",
+            "permanent": true
+        }
+    ],
     "headers": [
         {
             "source": "/assets/(.*)",
